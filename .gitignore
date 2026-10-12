@@ -1,0 +1,21 @@
+# Compiled objects and build output
+build/
+*.o
+*.a
+*.so
+*.out
+
+# Temporary program outputs
+sample.bin
+result.bin
+
+# Local trace logs
+trace*.log
+
+# Core dumps
+core
+core.*
+
+# Editor files
+*.swp
+*~
