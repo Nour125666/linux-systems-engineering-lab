@@ -1,0 +1,1 @@
+Today I learned about offsets and the lseek function, how it can provide the current offset without modifying it and how we can use it to modify the offset of a file descriptor and in the case where fd2=dup(fd1), these two file descriptors now share the same offset so changing it with lseek(fd2, 1, SEEK_SET) also affects fd1's offset which is rather interesting.

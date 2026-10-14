@@ -19,3 +19,8 @@ core.*
 # Editor files
 *.swp
 *~
+
+# Day 2 generated files
+month-01/week-01/day02/fd_offset_lab
+month-01/week-01/day02/data.bin
+month-01/week-01/day02/telemetry.bin
