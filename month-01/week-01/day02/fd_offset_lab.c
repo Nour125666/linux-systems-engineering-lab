@@ -59,7 +59,10 @@ int main(void)
     if (read_two("fd1", fd1) == -1) goto cleanup;
     if (read_two("fd2", fd2) == -1) goto cleanup;
     if (read_two("fd3", fd3) == -1) goto cleanup;
-
+if (lseek(fd1, 1, SEEK_SET) == (off_t)-1) {
+    perror("lseek");
+    goto cleanup;
+}
     /* Experiment 2: Close fd1 */
     if (close(fd1) == -1) {
         perror("close fd1");
@@ -67,7 +70,6 @@ int main(void)
         goto cleanup;
     }
     fd1 = -1;
-lseek(fd1, 1, SEEK_SET);
     /* fd2 is still valid, with the shared offset */
     if (read_two("fd2 after closing fd1", fd2) == -1)
         goto cleanup;

@@ -1,0 +1,22 @@
+
+# Day 1 compiled executables
+/copy
+/broken_copy
+
+# Day 2 compiled executables
+/day02/telemetry_inspector
+
+# Day 3 compiled executables
+/day03/fork_exec_lab
+/day03/memory_lab
+/day03/memory_lab_asan
+/day03/memory_sections
+/day03/process_lab
+/day03/sensor_demo
+/day03/signal_lab
+
+# Compiler-generated object files
+*.o
+
+# Editor backup files
+*.save

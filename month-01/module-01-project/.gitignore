@@ -1,0 +1,10 @@
+
+# Compiled executables
+/bms_diag
+/bms_diag_asan
+
+# Generated binary test fixtures
+/*.bin
+
+# Temporary test output
+/test_output.txt
