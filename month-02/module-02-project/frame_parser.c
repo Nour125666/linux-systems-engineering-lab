@@ -62,22 +62,16 @@ for (size_t i = 1; i + 1 < FRAME_SIZE; i++) {
 
         size_t remaining = FRAME_SIZE - i;
 
-        /* TODO 1: Move the remaining bytes to frame[0]. */
 memmove(frame, &frame[i], remaining);
-        /* TODO 2: Update *received. */
 *received=remaining;
-        /* TODO 3: Set the appropriate parser state. */
 *state=COLLECT_FRAME;
 return false;    }
 }
 
-/* TODO 4: Handle a trailing 0x4E at frame[7]. */
 if (frame[FRAME_SIZE - 1]==0x4E){
 frame[0]=0x4E;
-        /* TODO 2: Update *received. */
 *received=1;
 *state=WAIT_MAGIC_1;}
-/* TODO 5: Reset if no possible header remains. */
 else {
 *received=0;
 *state=WAIT_MAGIC_0;}

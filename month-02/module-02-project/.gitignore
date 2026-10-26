@@ -1,0 +1,8 @@
+/serial_config
+/serial_reader
+/test_crc8
+/test_frame_parser
+*.bak
+/ipc_server
+/ipc_client
+/bms_service
