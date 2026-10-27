@@ -24,3 +24,12 @@ core.*
 month-01/week-01/day02/fd_offset_lab
 month-01/week-01/day02/data.bin
 month-01/week-01/day02/telemetry.bin
+
+# Module 3 compiled executables
+/month-03/module-03-processes/exec_lab
+/month-03/module-03-processes/fork_lab
+/month-03/module-03-processes/fork_memory
+/month-03/module-03-processes/fork_wait
+/month-03/module-03-processes/signal_lab
+/month-03/module-03-processes/processlab/processlab
+/month-03/module-03-processes/processlab/ignore_term
