@@ -1,0 +1,3 @@
+true
+test 10 -gt 5
+python3 -c 'assert 2 + 2 == 4'

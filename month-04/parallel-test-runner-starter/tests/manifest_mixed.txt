@@ -1,0 +1,4 @@
+true
+false
+python3 -c 'assert 2 + 2 == 4'
+exit 7
