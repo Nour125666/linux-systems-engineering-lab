@@ -1,1 +1,6 @@
-ptrunner
+/ptrunner
+/ptrunner_asan
+/ptrunner_tsan
+/*.o
+*.log
+/ptrunner_backup.c
