@@ -33,3 +33,13 @@ month-01/week-01/day02/telemetry.bin
 /month-03/module-03-processes/signal_lab
 /month-03/module-03-processes/processlab/processlab
 /month-03/module-03-processes/processlab/ignore_term
+
+# Linux kernel module build products
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.symvers
+modules.order
+.*.cmd
+.tmp_versions/
